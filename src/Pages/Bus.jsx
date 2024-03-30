@@ -75,7 +75,7 @@ const Bus = (props) => {
       <br />
       <WhyUse />
 
-      <Services data={busRoutes}/>
+      <Services mainData="Bookme Bus Services" data={busRoutes}/>
       <FAQs />
 
      <Guidence steps={steps}/>

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -21,10 +21,17 @@ import Practice from './Pages/Practice'
 
 function App() {
 
+
+
+
     const location = useLocation();
 
     console.log(location.pathname);
 
+
+    useEffect(()=>{
+      window.scrollTo(0,0)
+    }, [location.pathname]);
   const [showBar, setShowBar] = useState("hidden");
     const handleSideBar = ()=>{
      

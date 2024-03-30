@@ -171,7 +171,12 @@ const flightRoutes = [
     "Muscat, Oman to Lahore Flights",
     "Muscat, Oman to"
 ]
+
+    const international =  ["Dubai", "Turkey", "Maldives", "United Kingdom"]
+   const  local = ["Karachi", "Islamabad", "Lahore", "Multan", "Sialkot"]
+
   
 
+  
 
-export   {data, flightRoutes};
+export   {data, flightRoutes, local ,international};

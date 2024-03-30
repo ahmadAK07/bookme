@@ -4,7 +4,7 @@ import HelpingCards from '../Components/HelpingCards'
 import WhyUse from '../Components/WhyUse'
 import FAQs from '../Components/FAQs'
 import Practice from './Practice'
-import {data, flightRoutes} from '../assets/flight-logo'
+import {data, flightRoutes, local, international} from '../assets/flight-logo'
 import Services from '../Components/Services'
 const Flight = (props) => {
   
@@ -27,7 +27,26 @@ const Flight = (props) => {
 
        <FAQs/>
 
-       <Services data={flightRoutes}/>
+       <Services mainData="Top Flights" data={flightRoutes}/>
+
+      <div className='2xl:w-[1200px] w-[100%] mx-auto px-8 py-6'>
+        <h3 className='text-xl font-bold'>Fly Wherever You Want</h3>
+        <p className='text-md text-gray-500'>Bookme has satisfied its customers with authentic online flight bookings for both domestic and international destinations.</p>
+
+        <h5 className='font-semibold text-lg'>Major international destinations include:</h5>
+       <ul className='list-disc ml-3' >
+       {international && international.map((item, i)=>{
+          return <li className='text-md my-1 text-gray-400 font-semibold'>{item}</li>
+        })}
+       </ul>
+        <h5 className='font-semibold text-lg'>Major international destinations include:</h5>
+       <ul className='list-disc ml-3'>
+       {local && local.map((item, i)=>{
+          return <li className='text-md my-1 text-gray-400 font-semibol'>{item}</li>
+        })}
+       </ul>
+      </div>
+
     </div>
   )
 }
