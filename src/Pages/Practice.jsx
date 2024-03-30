@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import Slider from "react-slick";
-import data from  '../assets/bus-logo'
+
 import '../Components/slick.css';
 import '../Components/slick-theme.css';
 
 
-const Practice = () => {
+const Practice = (props) => {
     
     const settings = {
        
@@ -22,7 +22,7 @@ const Practice = () => {
  <div className="slider-container">
   <Slider {...settings}>
        
-    {data.map((src, i)=>{
+    {props.data.map((src, i)=>{
       return (
         <div className='h-20 bg-white'>
           <img src={src} alt="" className='h-20' />

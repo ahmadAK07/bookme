@@ -8,7 +8,7 @@ import Guidence from '../Components/Guidence'
 import NewsLetter from '../Components/NewsLetter'
 import Footer from '../Components/Footer'
 import Practice from './Practice'
-
+import data from  '../assets/bus-logo'
 const Bus = (props) => {
   
   const steps = [
@@ -35,7 +35,7 @@ const Bus = (props) => {
 
       <br />
      <div className='overflow-hidden relative 2xl:w-[1200px] w-[100%] mx-auto'>
-     <Practice/>
+     <Practice data={data}/>
      </div>
       <br />
       <WhyUse />
