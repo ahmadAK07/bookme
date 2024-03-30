@@ -4,7 +4,7 @@
 
 *{
     font-family: Inter;
-    transition: all .5s;
+    /* transition: all .5s; */
     scroll-behavior: smooth;
 
 }
