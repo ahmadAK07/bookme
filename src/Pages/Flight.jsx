@@ -4,7 +4,8 @@ import HelpingCards from '../Components/HelpingCards'
 import WhyUse from '../Components/WhyUse'
 import FAQs from '../Components/FAQs'
 import Practice from './Practice'
-import data from '../assets/flight-logo'
+import {data, flightRoutes} from '../assets/flight-logo'
+import Services from '../Components/Services'
 const Flight = (props) => {
   
    
@@ -25,6 +26,8 @@ const Flight = (props) => {
 
 
        <FAQs/>
+
+       <Services data={flightRoutes}/>
     </div>
   )
 }

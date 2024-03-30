@@ -10,7 +10,42 @@ import Footer from '../Components/Footer'
 import Practice from './Practice'
 import data from  '../assets/bus-logo'
 const Bus = (props) => {
-  
+  const busRoutes = [
+    "Lahore to Multan Bus",
+    "Karachi to Hyderabad Bus",
+    "Hyderabad to Karachi Bus",
+    "Multan to Lahore Bus",
+    "Islamabad to Lahore Bus",
+    "Faisalabad to Lahore Bus",
+    "Sargodha to Lahore Bus",
+    "Gujranwala to Lahore Bus",
+    "Sahiwal to Islamabad Bus",
+    "Sialkot to Lahore Bus",
+    "Peshawar To Lahore Bus",
+    "Okara to Lahore Bus",
+    "Abbottabad to Islamabad Bus",
+    "Khanewal to Lahore Bus",
+    "Gujrat to Jhelum Bus",
+    "Dera Ghazi Khan to Multan",
+    "Dera Ismail Khan to Islamabad",
+    "Bahawalpur to Islamabad",
+    "Jhang to Islamabad",
+    "Lahore to Quetta Bus",
+    "Islamabad to Quetta",
+    "Karachi to Quetta",
+    "Peshawar to Quetta",
+    "Quetta To Karachi",
+    "Quetta To Islamabad Bus",
+    "Quetta To Multan Bus",
+    "Faisalabad to Multan Bus",
+    "Faisalabad to Bahawalpur Bus",
+    "Lahore to Swat Bus Service",
+    "Islamabad to Faisalabad Bus",
+    "Karachi to Islamabad bus",
+    "Karachi to Multan Bus",
+    "Karachi to Faisalabad Bus",
+    "Karachi to Mianwali Bus"
+  ];
   const steps = [
     "Enter the departure and destination locations in the “From” and “To” tab respectively.",
     "Select the “Date of Your Bus Trip” and hit the “Search” button.",
@@ -40,7 +75,7 @@ const Bus = (props) => {
       <br />
       <WhyUse />
 
-      <Services />
+      <Services data={busRoutes}/>
       <FAQs />
 
      <Guidence steps={steps}/>
