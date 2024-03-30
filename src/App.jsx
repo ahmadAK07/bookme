@@ -30,7 +30,8 @@ function App() {
 
 
     useEffect(()=>{
-      window.scrollTo(0,0)
+      window.scrollTo(0,0);
+      handleSideBar();
     }, [location.pathname]);
   const [showBar, setShowBar] = useState("hidden");
     const handleSideBar = ()=>{
@@ -50,7 +51,7 @@ function App() {
       
    
       <Navbar handleSideBar={handleSideBar}/>
-      {location.pathname == "/login" || location.pathname == "/signup"  ? <></> :   <Sidebar showBar={showBar}/>}
+      {location.pathname == "/login" || location.pathname == "/signup"  ? <></> :   <Sidebar handleSideBar={handleSideBar} showBar={showBar}/>}
       <div id='main-content' className='absolute top-20 lg:left-[250px] md:left-[80px] lef-0'>
 
 

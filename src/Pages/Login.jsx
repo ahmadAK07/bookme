@@ -22,11 +22,11 @@ function Login() {
                   <a href="/forgot" className='text-blue-500 font-bold w-[80%]'>Forgot Password?</a>
                   <button className='my-bg text-white text-lg w-[80%] p-3 rounded-lg'>Sign in</button>
 
-                  <div className='border  w-[60%] flex items-center gap-2 pl-3 py-2'>
-                  <img src={google_icon} className='w-8'  alt="" /> Sign in with Google
+                  <div className='border  sm:w-[60%] w-[80%] flex justify-center items-center gap-2 sm:pl-3 pl-2 py-2'>
+                  <img src={google_icon} className='sm:w-8 w-6'  alt="" /> Sign in with Google
                   </div>
-                  <div className='border   w-[60%] flex items-center gap-2 pl-3 py-2'>
-                  <i className="fa-brands fa-facebook text-3xl text-blue-500"></i>&nbsp; Sign in with Google
+                  <div className='border   sm:w-[60%] w-[80%] flex justify-center items-center gap-2 sm:pl-3 pl-2 py-2'>
+                  <i className="fa-brands fa-facebook sm:text-3xl text-2xl text-blue-500"></i>&nbsp; Sign in with Google
                   </div>
                 </form>
                 <h3 className='text-center p-3 text-zinc-500 font-semibold'>Don't have an account? <Link to="/signup" className="text-blue-600  text-xl">Sign up</Link></h3>
