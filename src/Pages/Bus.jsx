@@ -7,8 +7,10 @@ import FAQs from '../Components/FAQs'
 import Guidence from '../Components/Guidence'
 import NewsLetter from '../Components/NewsLetter'
 import Footer from '../Components/Footer'
+import Practice from './Practice'
 
 const Bus = (props) => {
+  
   const steps = [
     "Enter the departure and destination locations in the “From” and “To” tab respectively.",
     "Select the “Date of Your Bus Trip” and hit the “Search” button.",
@@ -30,6 +32,12 @@ const Bus = (props) => {
       </div>
 
       <HelpingCards />
+
+      <br />
+     <div className='overflow-hidden relative 2xl:w-[1200px] w-[100%] mx-auto'>
+     <Practice/>
+     </div>
+      <br />
       <WhyUse />
 
       <Services />

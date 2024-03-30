@@ -2,12 +2,15 @@
 .slick-slider
 {
     position: relative;
-
+    left: 60px;
     display: block;
     box-sizing: border-box;
-   border: 1px solid red;
-   width: 1000px;
+
+   /* width: 1200px; */
+   margin-left: -60px;
+
    align-items: center;
+   background: white;
    -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -19,6 +22,7 @@
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+
 
 .slick-list
 {
