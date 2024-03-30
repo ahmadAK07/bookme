@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Inter;
+    transition: all .5s;
+    scroll-behavior: smooth;
+
+}
+img{
+  object-fit: cover;
+  object-position: center;
+}
+i{
+  cursor: pointer;
+}
+.my-color{
+    color: #1476d1;
+}
+.my-bg{
+    background: #1476d1;
+}
+
+.my-primary-bg{
+  background: #3C76D1;
+}
+
+.my-bg-black{
+  background: #212529;
+}
+
+.h-screen-80{
+  height: calc(100vh - 5rem);
+}
+
+input{
+  outline: none;
+}
+
+
+.inset-input{
+  box-shadow: inset 0px 0px 5px gray;
+}
+
+#main-content{
+  width: calc(100vw - 258px);
+}
+
+@media screen and (max-width: 1024px) {
+  #main-content{
+    width: calc(100vw - 88px);
+  }
+}
+@media screen and (max-width: 768px) {
+  #main-content{
+    width: 100vw;
+  }
+}
+
+/* For Chrome, Safari, and Opera */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+ 
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #dadada;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(83, 83, 83);
+    border: 1px solid #dadada;
+    /* border-radius: 20px; */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+
+
+/* this is input */
+
