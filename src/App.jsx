@@ -59,7 +59,7 @@ function App() {
 
     </Routes>
 
-     {location.pathname == "/practice" ? "" : <Footer/>}
+     {location.pathname == "/practice" || location.pathname == "/login" || location.pathname == "/signup"   ? "" : <Footer/>}
 
       </div>
 
