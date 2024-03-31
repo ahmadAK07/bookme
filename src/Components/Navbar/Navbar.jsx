@@ -14,7 +14,7 @@ const Navbar = (props) => {
       </div>
 
       <div className='flex items-center md:gap-12 sm:gap-3 gap-2 h-20'>
-        <Link className='sm:text-[16px] text-[14px]' to="/help">Help</Link>
+        {/* <Link className='sm:text-[16px] text-[14px]' to="/help">Help</Link> */}
         <Link className='sm:text-[16px] text-[14px]' to="/login">Login</Link>
         <Link className='text-white bg-inherit my-bg sm:px-6 px-2 sm:py-3 py-1 rounded-md' to="/signup">Sign Up</Link>
       </div>
