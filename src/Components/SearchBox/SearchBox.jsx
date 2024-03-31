@@ -31,20 +31,20 @@ const SearchBox = (props) => {
         <h1 className='text-3xl font-semibold'>Search for {props.category} </h1>
         <p className='my-4 text-xl'>Find the best deals for your bus travel</p>
         {props.category !== "Train" ? (
-          <div className='flex gap-7 text-lg py-3'>
-           {props.category == "Bus" ? (<>
+          <div className='flex sm:gap-7  gap-3 flex-wrap justify-start sm:text-lg text-md py-3'>
+           {props.category == "Bus" || props.category == "Flight" ? (<>
             <label htmlFor="oneway" className='flex items-center gap-1'>
-              <input type="radio" className='sm:w-5 w-8 h-5' name='way' id='oneway' /> One Way
+              <input type="radio" className=' w-5 h-5' name='way' id='oneway' /> One Way
             </label>
             <label htmlFor="twoway" className='flex items-center gap-1'>
-              <input type="radio" className='sm:w-5 w-8 h-5' name='way' id='twoway' /> Round Trip
+              <input type="radio" className=' w-8 h-5' name='way' id='twoway' /> Round Trip
             </label>
            </>) : <>
            <label htmlFor="withingcity" className='flex items-center gap-1'>
-              <input type="radio" className='sm:w-5 w-8 h-5' name='innerouter' id='withingcity' />Within City
+              <input type="radio" className='w-5 h-5' name='innerouter' id='withingcity' />Within City
             </label>
             <label htmlFor="outofcity" className='flex items-center gap-1'>
-              <input type="radio" className='sm:w-5 w-8 h-5' name='innerouter' id='outofcity' /> Out Of City
+              <input type="radio" className='w-5  h-5' name='innerouter' id='outofcity' /> Out Of City
             </label>
            </>}
             {props.category === "Flight" && (
