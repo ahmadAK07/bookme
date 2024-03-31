@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
     </div>
 
-
+    <hr />
     <div style={{background: '#1D2939'}}>
         <div className='2xl:w-[1200px] w-[100%] mx-auto p-8 flex justify-between items-center '>
            <div className='h-10'>

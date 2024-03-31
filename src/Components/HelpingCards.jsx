@@ -32,12 +32,12 @@ const HelpingCards = () => {
 
      {cardData.map((item, i)=>{
       return (
-        <div className='shadow-md shadow-blue-300 flex items-center h-20 w-[30%] lg:min-w-[250px] min-w-[350px]'>
+        <div className='shadow-md shadow-blue-300 flex items-center h-24 w-[30%] lg:min-w-[250px] min-w-[350px]'>
         <div className='w-[20%] h-[100%] flex items-center justify-center'>
         {item.svg}
         </div>
-        <div className='w-[80%] h-full p-1'>
-          <h4>{item.h}</h4>
+        <div className='w-[80%] h-full p-2'>
+          <h4 className='font-semibold text-xl'>{item.h}</h4>
           <p>{item.p}</p>
         </div>
       </div>

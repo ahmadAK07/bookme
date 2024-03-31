@@ -16,8 +16,8 @@ const Movies = () => {
          {
           imageData.map((item, i)=>{
             return(
-              <div className='hover:scale-[1.03] transition-transform shadow-md  min-w-[270px] rounded-2xl overflow-hidden lg:w-[23%] md:w-[45%] sm:w-[40%]  w-[70%]'>
-                 <img src={item.img} className='w-full h-[400px]' alt="" />
+              <div className='hover:scale-[1.03] transition-transform shadow-md  min-w-[230px] rounded-2xl overflow-hidden lg:w-[23%] md:w-[45%] sm:w-[40%]  w-[70%]'>
+                 <img src={item.img} className='w-full h-[350px]' alt="" />
                 <div className=' px-3 pt-3 pb-1'>
                 <div className=' flex justify-between items-center'>
                   <h6 className='text-md font-bold'>{item.name}</h6> 

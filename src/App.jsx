@@ -31,9 +31,9 @@ function App() {
 
     useEffect(()=>{
       window.scrollTo(0,0);
-      handleSideBar();
+      // handleSideBar();
     }, [location.pathname]);
-  const [showBar, setShowBar] = useState("hidden");
+  const [showBar, setShowBar] = useState("block");
     const handleSideBar = ()=>{
      
       if(showBar == "block"){

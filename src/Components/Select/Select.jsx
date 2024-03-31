@@ -11,7 +11,7 @@ const Select = (props) => {
     <form class={props.formStyle}>
                     
                     <select onChange={handleChange} value={props.val} id="cities" class={props.selectStyle}>
-                        <option value="">Departure</option>
+                        <option value="">{props.val}</option>
                        {
                         props.cityData && props.cityData.map((city, i) => {
                             return <option value={city} key={i}>{city}</option>
